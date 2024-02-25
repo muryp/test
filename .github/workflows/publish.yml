@@ -12,7 +12,7 @@ defaults:
 jobs:
   release:
     name: Release
-    if: ${{ github.repository_owner == 'withastro' }}
+    if: ${{ github.repository_owner == 'muryp' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
