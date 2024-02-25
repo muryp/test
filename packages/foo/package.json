@@ -1,0 +1,13 @@
+{
+  "name": "@muryp/foo",
+  "version": "1.0.0",
+  "description": "learn how to publish",
+  "main": "index.js",
+  "scripts": {
+    "lint": "echo \"lint on foo\" && exit 1",
+    "build": "echo \"build on foo\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
