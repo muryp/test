@@ -46,4 +46,5 @@ jobs:
 
       # Gunakan nilai output 'branch' pada langkah berikutnya
       - name: Gunakan nama cabang
-        run: echo "Nama cabang: ${{ steps.extract_branch.outputs.branch }}"
+        run: |
+         echo "Nama cabang: ${{ steps.extract_branch.outputs.branch }}"
