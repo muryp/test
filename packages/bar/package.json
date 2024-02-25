@@ -1,5 +1,6 @@
 {
   "name": "@muryp/bar",
+  "private": false,
   "version": "1.0.0",
   "description": "learn how to publish",
   "main": "index.js",

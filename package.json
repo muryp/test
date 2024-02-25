@@ -1,15 +1,24 @@
 {
-  "name": "main",
+  "name": "@muryp/main",
   "version": "1.0.0",
-  "description": "",
+  "description": "testing action",
   "main": "index.js",
   "scripts": {
     "build": "echo \"Error: no test specified\""
   },
   "keywords": [],
-  "author": "",
+  "author": "alifprihantoro",
   "license": "ISC",
   "dependencies": {
     "@changesets/cli": "^2.27.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muryp/tes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muryp/tes/issues"
+  },
+  "homepage": "https://github.com/muryp/tes#readme"
 }
