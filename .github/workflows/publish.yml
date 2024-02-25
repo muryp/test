@@ -5,11 +5,14 @@ on:
     branches:
       - release
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+defaults:
+  run:
+    shell: bash
 
 jobs:
   release:
     name: Release
+    if: ${{ github.repository_owner == 'withastro' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
