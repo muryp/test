@@ -26,4 +26,4 @@ jobs:
       # Fallback action for other changes
       - name: Run fallback action
         if: github.event.head_commit.modified != 'foo/bar1/' && github.event.head_commit.modified != 'foo/tes/'
-        run: echo "Fallback action"
+        run: echo "${{github.event.head_commit.modified}}"
