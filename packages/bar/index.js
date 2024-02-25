@@ -1,1 +1,1 @@
-console.log('bar1')
+console.log('bar2')
