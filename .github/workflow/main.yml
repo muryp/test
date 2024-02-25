@@ -1,0 +1,29 @@
+name: My Custom Workflow
+
+on:
+  push:
+    paths:
+      - 'foo/bar1/**' # Trigger if files are changed or added in foo/bar1
+      - 'foo/tes/**'  # Trigger if files are changed or added in foo/tes
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Add your specific actions here based on the folder conditions
+      - name: Run action for foo/bar1
+        if: startsWith(github.event.head_commit.modified, 'foo/bar1/')
+        run: echo "Do something for foo/bar1"
+
+      - name: Run action for foo/tes
+        if: startsWith(github.event.head_commit.modified, 'foo/tes/')
+        run: echo "Do something for foo/tes"
+
+      # Fallback action for other changes
+      - name: Run fallback action
+        if: github.event.head_commit.modified != 'foo/bar1/' && github.event.head_commit.modified != 'foo/tes/'
+        run: echo "Fallback action"
