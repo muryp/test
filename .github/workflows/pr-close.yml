@@ -1,0 +1,21 @@
+name: PR Merge Action
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  pr-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Get PR number
+        id: pr-number
+        run: echo "::set-output name=pr_number::${{ github.event.pull_request.number }}"
+
+      - name: Echo PR number
+        run: |
+          echo "Merged PR number: ${{ steps.pr-number.outputs.pr_number }}"
