@@ -1,11 +1,12 @@
 {
   "name": "@muryp/foo",
-  "version": "1.0.0",
+  "private": false,
+  "version": "1.1.0",
   "description": "learn how to publish",
   "main": "index.js",
   "scripts": {
-    "lint": "echo \"lint on foo\" && exit 1",
-    "build": "echo \"build on foo\" && exit 1"
+    "lint": "echo \"lint on foo\"",
+    "build": "echo \"build on foo\""
   },
   "keywords": [],
   "author": "",

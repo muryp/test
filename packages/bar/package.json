@@ -1,11 +1,12 @@
 {
   "name": "@muryp/bar",
-  "version": "1.0.0",
+  "private": false,
+  "version": "1.1.1",
   "description": "learn how to publish",
   "main": "index.js",
   "scripts": {
-    "lint": "echo \"lint on bar\" && exit 1",
-    "build": "echo \"build on bar\" && exit 1"
+    "lint": "echo \"lint on bar\"",
+    "build": "echo \"build on bar\""
   },
   "keywords": [],
   "author": "",
