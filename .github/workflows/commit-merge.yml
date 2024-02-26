@@ -16,4 +16,5 @@ jobs:
         if: ${{ github.event.pull_request.merged }}
         run: |
           echo "The following commits were merged:"
-          git log --pretty=format:"%h %s" ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}
+          git log --pretty=oneline
+          # git log --pretty=format:"%h %s" ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}
