@@ -2,9 +2,8 @@ name: My Custom Workflow
 
 on:
   push:
-    paths:
-      - 'foo/bar1/**' # Trigger if files are changed or added in foo/bar1
-      - 'foo/tes/**'  # Trigger if files are changed or added in foo/tes
+    branches:
+      - "*"
 
 jobs:
   my-job:

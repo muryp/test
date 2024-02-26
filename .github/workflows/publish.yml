@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - release
+    paths:
+      - "packages/**/*"
+      - "!**/*.md"
+      - "!**/*.txt"
 
 defaults:
   run:
