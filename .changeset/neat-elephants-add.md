@@ -1,5 +1,5 @@
 ---
-'@muryp/foo': path
+'@muryp/bar': path
 ---
 
-foo path change
+bar path change
