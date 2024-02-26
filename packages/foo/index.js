@@ -1,1 +1,1 @@
-console.log('foo djdl')
+console.log('foo')
