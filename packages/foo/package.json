@@ -1,7 +1,7 @@
 {
   "name": "@muryp/foo",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "learn how to publish",
   "main": "index.js",
   "scripts": {
