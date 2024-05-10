@@ -1,0 +1,20 @@
+name: My Custom Workflow
+
+on:
+  push:
+    branches:
+      - "*"
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: exit
+        run: exit 1
+      - name: this not exec
+        run: |
+          echo 'not exec'
+          git log
