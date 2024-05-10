@@ -13,8 +13,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: exit
-        run: exit 0
+        run: |
+          echo "CHANGE_FILE=uiHome" >> $GITHUB_ENV
       - name: this not exec
+        if: env.CHANGE_FILE == 'ui'
+        run: |
+          echo 'not exec'
+          git log
+      - name: this exec
+        if: env.CHANGE_FILE == 'uiHome'
         run: |
           echo 'not exec'
           git log
